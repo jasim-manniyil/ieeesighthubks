@@ -1,7 +1,13 @@
+body
+{
+    background: black;
+    color: white;
+}
 .page-section .excom img
 {
     width: 80%;
     height: auto;
+    border-radius: 30px;
 }
 .page-section
 {
@@ -26,4 +32,10 @@
     width: 100px;
     height: auto;
     margin: auto;
+}
+.logos .container
+{
+    padding: 10px 10px;
+    background: white;
+    border-radius: 30px;
 }
