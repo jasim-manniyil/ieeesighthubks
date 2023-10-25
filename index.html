@@ -14,6 +14,7 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/style2.css" rel="stylesheet" />
         <link href="css/style3.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/responsive.css">
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -29,7 +30,7 @@
                       <li class="nav-item "><a class="nav-link " href="index.html">Home</a></li>
                         <li class="nav-item "><a class="nav-link " href="#services">About</a></li>
                         
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="rand.html">RandD</a></li>
     
                     </ul>
@@ -68,7 +69,7 @@
        
         <!--EVENTS-->
         <div class="textofcaro">
-          <h2>The Recent Events By IEEE KS</h2>
+          <h2>UPCOMING EVENTS</h2>
         </div>
         <div class="sectionpro">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -81,22 +82,19 @@
                 <div class="carousel-item active " data-bs-interval="3000">
                   <img src="assets/img/projects/p1.jpg" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>Some representative placeholder content for the first slide.</p>
+                      
                     </div>
                 </div>
                 <div class="carousel-item">
                   <img src="assets/img/projects/p2.jpg" class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>Some representative placeholder content for the first slide.</p>
+                      
                     </div>
                 </div>
                 <div class="carousel-item">
                   <img src="assets/img/projects/p3.jpg" er-bg.j class="d-block w-100" alt="...">
                   <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>Some representative placeholder content for the first slide.</p>
+                      
                     </div>
                 </div>
               </div>
@@ -116,7 +114,7 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Who leeds IEEE Sight kerala section</h3>
+                    <h3 class="section-subheading text-muted">IEEE Sight kerala section</h3>
                 </div>
                 <div class="row d-flex justify-content-center">
                     <div class="exsec text-center col-md-8 text-center float-start">
@@ -135,7 +133,7 @@
         <br>
 
         <main class="Main">
-            <h1>Our Ex-Com</h1>
+            <h1>RECENT EVENTS DONE IEEE SIGHT KS </h1>
             
             <section class="Carousel" id="carousel" tabindex="-1">
               <h2 class="Hidden">Carousel</h2>
@@ -210,6 +208,24 @@
               </article>
               <!--/Card-->
               <article class="Card Card--overlay Card--photo" id="card-8">
+                <div class="Card__media">
+                  <img class="Card__image" alt="Card image description" width="708" height="480" loading="lazy" src="https://images.unsplash.com/photo-1621045246196-4c7ce9092d3a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMxOTIyOQ&ixlib=rb-1.2.1&q=85&height=480">
+                </div>
+                <div class="Card__main">
+                  <h2><a class="Card__link" href="#">Prefer 4/3 aspect ratio</a></h2>
+                  <p>This is a generic card pattern.</p>
+                </div>
+              </article>
+              <article class="Card Card--overlay Card--photo" id="card-8">
+                <div class="Card__media">
+                  <img class="Card__image" alt="Card image description" width="708" height="480" loading="lazy" src="https://images.unsplash.com/photo-1621045246196-4c7ce9092d3a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMxOTIyOQ&ixlib=rb-1.2.1&q=85&height=480">
+                </div>
+                <div class="Card__main">
+                  <h2><a class="Card__link" href="#">Prefer 4/3 aspect ratio</a></h2>
+                  <p>This is a generic card pattern.</p>
+                </div>
+              </article>
+              <article class="Card Card--overlay Card--photo" id="card-9">
                 <div class="Card__media">
                   <img class="Card__image" alt="Card image description" width="708" height="480" loading="lazy" src="https://images.unsplash.com/photo-1621045246196-4c7ce9092d3a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMxOTIyOQ&ixlib=rb-1.2.1&q=85&height=480">
                 </div>
@@ -295,195 +311,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        <script>
-            (() => {
-  // Respect user perference
-  const isReducedMotion = window.matchMedia(
-    '(prefers-reduced-motion: reduce)'
-  ).matches;
-
-  // Helper to apply inline CSS
-  const setStyleProps = ($el, styles) => {
-    for (const [key, value] of Object.entries(styles)) {
-      if (value === false) {
-        $el.style.removeProperty(key);
-      } else {
-        $el.style.setProperty(key, value);
-      }
-    }
-  };
-
-  document.querySelectorAll('.Carousel').forEach(($carousel) => {
-    $carousel.scrollLeft = 0;
-
-    const $cards = Array.from($carousel.querySelectorAll('.Card'));
-    const $pagination = $carousel.nextElementSibling;
-    const [$previous, $next] = $pagination.querySelectorAll('.Arrow');
-    $pagination.querySelector('.Dot').classList.add('Dot--active');
-
-    const $start = document.createElement('div');
-    const $end = document.createElement('div');
-    $carousel.prepend($start);
-    $carousel.append($end);
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.target === $start) {
-          if ($previous) {
-            $previous.disabled = entry.isIntersecting;
-          }
-        }
-        if (entry.target === $end) {
-          if ($next) {
-            $next.disabled = entry.isIntersecting;
-          }
-        }
-      });
-    });
-    observer.observe($start);
-    observer.observe($end);
-
-    const scrollTo = ($card) => {
-      let offset = getOffset($card);
-      const left = document.dir === 'rtl' ? -offset : offset;
-      const behavior = isReducedMotion ? 'auto' : 'smooth';
-      $carousel.scrollTo({left, behavior});
-    };
-
-    const getOffset = ($el) => {
-      let offset = $el.offsetLeft;
-      if (document.dir === 'rtl') {
-        offset = $carousel.offsetWidth - (offset + $el.offsetWidth);
-      }
-      return offset;
-    };
-
-    $previous.addEventListener('click', (ev) => {
-      ev.preventDefault();
-      let $card = $cards[0];
-      const scroll = Math.abs($carousel.scrollLeft);
-      $cards.forEach(($item) => {
-        const offset = getOffset($item);
-        if (offset - scroll < -1 && offset > getOffset($card)) {
-          $card = $item;
-        }
-      });
-      scrollTo($card);
-    });
-
-    $next.addEventListener('click', (ev) => {
-      ev.preventDefault();
-      let $card = $cards[$cards.length - 1];
-      const scroll = Math.abs($carousel.scrollLeft);
-      $cards.forEach(($item) => {
-        const offset = getOffset($item);
-        if (offset - scroll > 1 && offset < getOffset($card)) {
-          $card = $item;
-        }
-      });
-      scrollTo($card);
-    });
-
-    $pagination.addEventListener('click', (ev) => {
-      if (ev.target.classList.contains('Dot')) {
-        ev.preventDefault();
-        const $card = document.querySelector(new URL(ev.target.href).hash);
-        if ($card) scrollTo($card);
-      }
-    });
-
-    // Highlight nearest "Dot" in pagination
-    let scrollTimeout;
-    $carousel.addEventListener(
-      'scroll',
-      () => {
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(() => {
-          let $dot = $pagination.querySelector('.Dot--active');
-          if ($dot) $dot.classList.remove('Dot--active');
-          let $active;
-          const scroll = Math.abs($carousel.scrollLeft);
-          if (scroll <= 0) {
-            $active = $cards[0];
-          }
-          if (scroll >= $carousel.scrollWidth - $carousel.offsetWidth) {
-            $active = $cards[$cards.length - 1];
-          }
-          if (!$active) {
-            let oldDiff;
-            $cards.forEach(($card) => {
-              const newDiff = Math.abs(scroll - getOffset($card));
-              if (!$active || newDiff < oldDiff) {
-                $active = $card;
-                oldDiff = newDiff;
-              }
-            });
-          }
-          $dot = $pagination.querySelector(
-            `[href="#${($active ?? $card[0]).id}"]`
-          );
-          if ($dot) $dot.classList.add('Dot--active');
-        }, 50);
-      },
-      {passive: true}
-    );
-
-    // Improve arrow key navigation
-    $carousel.addEventListener('keydown', (ev) => {
-      if (/^(Arrow)?Left$/.test(ev.key)) {
-        ev.preventDefault();
-        (document.dir === 'rtl' ? $next : $previous).click();
-      } else if (/(Arrow)?Right$/.test(ev.key)) {
-        ev.preventDefault();
-        (document.dir === 'rtl' ? $previous : $next).click();
-      }
-    });
-
-    // Improve transition when tabbing focus
-
-    let scrollLeft = 0;
-    $carousel.addEventListener(
-      'blur',
-      (ev) => {
-        scrollLeft = $carousel.scrollLeft;
-      },
-      {capture: true}
-    );
-    $carousel.addEventListener(
-      'focus',
-      (ev) => {
-        $carousel.scrollLeft = scrollLeft;
-        const $card = ev.target.closest('.Card');
-        if ($card) scrollTo($card);
-      },
-      {capture: true}
-    );
-  });
-
-  // Optional polyfill for Safari 14
-  if (!isReducedMotion && !window.CSS.supports('scroll-behavior: smooth')) {
-    import('https://cdn.skypack.dev/smoothscroll-polyfill').then((module) => {
-      module.polyfill();
-    });
-  }
-})();
-
-(() => {
-  // Toggle right-to-left for demo
-  document.querySelector('#toggle-rtl').addEventListener('change', (ev) => {
-    document.dir = ev.target.checked ? 'rtl' : 'ltr';
-    document.querySelectorAll('.Carousel').forEach(($carousel) => {
-      $carousel.scrollLeft = 0;
-    });
-  });
-
-  // Toggle single slides class for demo
-  document.querySelector('#toggle-single').addEventListener('change', (ev) => {
-    document.querySelectorAll('.Carousel').forEach(($carousel) => {
-      $carousel.classList.toggle('Carousel--single', ev.target.checked);
-    });
-  });
-})(); 
-        </script>
+        <script src="js/carouselpoint.js"></script>
+        
     </body>
 </html>

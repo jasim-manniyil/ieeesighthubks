@@ -21,6 +21,7 @@ body
 .page-section .image img
 {
     border-radius: 10px;
+    margin: auto;
 }
 .logos
 {
@@ -39,7 +40,10 @@ body
     background: white;
     border-radius: 30px;
 }
-
+.excom img
+{
+  margin: auto;
+}
 
 :root {
     --theme-blue: 200, 80%, 38%;
