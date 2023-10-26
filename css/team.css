@@ -1,0 +1,23 @@
+
+.sec1
+{
+    margin: 50px 0px;
+}
+.sec2
+{
+    margin: 50px 0px;
+}
+.sec3
+{
+    margin: 50px 0px;
+}
+.card
+{
+    background-color: transparent;
+    text-align: center;
+    margin: auto;
+}
+.card img
+{
+    justify-content: center;
+}
