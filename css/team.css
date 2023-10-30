@@ -1,15 +1,18 @@
-
-.sec1
+body
 {
-    margin: 50px 0px;
+    background: black;
 }
-.sec2
+.sec
 {
     margin: 50px 0px;
+    background: black;
 }
-.sec3
+.sec h3
 {
-    margin: 50px 0px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 1000;
 }
 .card
 {
@@ -20,4 +23,70 @@
 .card img
 {
     justify-content: center;
+}
+.card-body
+{
+    margin: auto;
+}
+#myCarousel {
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next,
+    .carousel-item-next:not(.carousel-item-start) {
+        transform: translateX(25%) !important;
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-item-prev:not(.carousel-item-end),
+    .active.carousel-item-start,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+
+    .carousel-item-next.carousel-item-start,
+    .active.carousel-item-end {
+        transform: translateX(0) !important;
+    }
+
+    .carousel-inner .carousel-item-prev,
+    .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+}
+
+.sec .card
+{
+    background: transparent;
+    margin: auto;
+}
+.sec .card h5
+{
+    color: white;
+    font-size: 25px;
+}
+.sec .card p
+{
+    color: white;
+    font-size: 18px;
 }
