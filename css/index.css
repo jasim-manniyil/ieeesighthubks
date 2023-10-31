@@ -3,7 +3,10 @@
     border-bottom: 1px solid red;
     color: yellow;
 }
-
+.Main 
+{
+    text-align: center;
+}
 .dd .accordion-item
 {
     background: black;
@@ -30,7 +33,7 @@
 }
 .dd .accordion-button
 {
-    background: yellow;
+    background: #FFECD1;
 }
 .dd p
 {
