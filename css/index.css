@@ -1,0 +1,40 @@
+.Main h3 span
+{
+    border-bottom: 1px solid red;
+    color: yellow;
+}
+
+.dd .accordion-item
+{
+    background: black;
+}
+.dd .accordion
+{
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+.dd h1
+{
+    text-align: center;
+    margin: 50px 0px;
+}
+.dd h1 span
+{
+    border-bottom: 2px solid red ;
+    color: yellow;
+}
+.dd h2 button
+{
+    font-weight: bold;
+}
+.dd .accordion-button
+{
+    background: yellow;
+}
+.dd p
+{
+    color: white;
+}
+
+
